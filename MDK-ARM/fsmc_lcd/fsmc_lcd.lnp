@@ -1,0 +1,28 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+"fsmc_lcd\startup_stm32f407xx.o"
+"fsmc_lcd\ili9486.o"
+"fsmc_lcd\main.o"
+"fsmc_lcd\stm32f4xx_it.o"
+"fsmc_lcd\stm32f4xx_hal_msp.o"
+"fsmc_lcd\stm32f4xx_ll_fsmc.o"
+"fsmc_lcd\stm32f4xx_hal_sram.o"
+"fsmc_lcd\stm32f4xx_hal_tim.o"
+"fsmc_lcd\stm32f4xx_hal_tim_ex.o"
+"fsmc_lcd\stm32f4xx_hal_rcc.o"
+"fsmc_lcd\stm32f4xx_hal_rcc_ex.o"
+"fsmc_lcd\stm32f4xx_hal_flash.o"
+"fsmc_lcd\stm32f4xx_hal_flash_ex.o"
+"fsmc_lcd\stm32f4xx_hal_flash_ramfunc.o"
+"fsmc_lcd\stm32f4xx_hal_gpio.o"
+"fsmc_lcd\stm32f4xx_hal_dma_ex.o"
+"fsmc_lcd\stm32f4xx_hal_dma.o"
+"fsmc_lcd\stm32f4xx_hal_pwr.o"
+"fsmc_lcd\stm32f4xx_hal_pwr_ex.o"
+"fsmc_lcd\stm32f4xx_hal_cortex.o"
+"fsmc_lcd\stm32f4xx_hal.o"
+"fsmc_lcd\stm32f4xx_hal_exti.o"
+"fsmc_lcd\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "fsmc_lcd\fsmc_lcd.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "fsmc_lcd.map" -o fsmc_lcd\fsmc_lcd.axf
