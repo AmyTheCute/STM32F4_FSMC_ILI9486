@@ -4,7 +4,7 @@
 #include "stm32f4xx_hal.h"
 
 #define cmdReg *(__IO uint16_t *)(0x6C000000)
-#define dataReg *(__IO uint16_t *)(0x6C000400)
+#define dataReg *(__IO uint16_t *)(0x6C000800)
 
 
 // LCD Size Defenition

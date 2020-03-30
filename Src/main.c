@@ -104,7 +104,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 		HAL_Delay(200);
-		TFT_Clear(Black);
+		TFT_DrawCircle(10,10,10, RED);
   }
   /* USER CODE END 3 */
 }
