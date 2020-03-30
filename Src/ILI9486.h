@@ -6,38 +6,6 @@
 #define cmdReg *(__IO uint16_t *)(0x6C000000)
 #define dataReg *(__IO uint16_t *)(0x6C000400)
 
-#ifndef LowNibbleOffset // Define the offset of the lower 8 Bit pins.
-#define LowNibbleOffset 4
-#endif
-
-#ifndef HighNibbleOffset // Define the offset of the higher 8 bit pins.
-#define HighNibbleOffset 15
-#endif
-
-
-#ifndef TFT_ControlPort
-#define TFT_ControlPort LPC_GPIO2
-#endif
-
-#ifndef PIN_CS
-#define PIN_CS (1UL << 8)
-#endif
-
-#ifndef PIN_RS
-#define PIN_RS			(1UL << 9)
-#endif
-
-#ifndef PIN_WR
-#define PIN_WR			(1UL << 10)
-#endif
-
-#ifndef PIN_RD
-#define PIN_RD			(1UL << 11) 
-#endif
-
-#ifndef PIN_RST
-#define PIN_RST			(1UL << 13)
-#endif
 
 // LCD Size Defenition
 #ifndef WIDTH
